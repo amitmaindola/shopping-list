@@ -6,9 +6,9 @@ function ItemList(props) {
   else return (
     <div>
         {props.itemList.map((item)=>{
-          return <div style={{display: 'flex', justifyContent: 'space-between', width: '50%', margin: '0 auto', alignItems: 'center', fontSize: '20px'}}>
+          return <div className='item'>
                   <p>{item.text}</p>
-                  <p onClick={()=>{props.removeItem(item.id)}} style={{color: 'red', fontWeight: 700, cursor: 'pointer'}}>x</p>
+                  <p onClick={()=>{props.removeItem(item.id)}} className='closeBtn'>x</p>
                 </div>
         })}
     </div>

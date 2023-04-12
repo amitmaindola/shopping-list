@@ -1,3 +1,16 @@
-.App{
+.App {
   text-align: center;
+}
+
+.item {
+  display: "flex";
+  justify-content: "space-between";
+  width: "50%";
+  margin: "0 auto";
+  align-items: "center";
+  font-size: "20px";
+}
+
+.closeBtn{
+  color: 'red'; font-weight: 700; cursor: 'pointer'
 }
